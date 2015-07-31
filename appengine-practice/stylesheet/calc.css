@@ -1,0 +1,8 @@
+body{
+  background: url('images.jpeg');
+  background-size: 1500px;
+  margin: 250px;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+}

@@ -1,0 +1,16 @@
+<h1>Add a Comment</h1>
+
+<form action="/comment/create" method="POST">
+  <div>Name: <input type="text" name="name"/></div>
+  <div>Message: <input type="text" name="message"/></div>
+  <div><input type="submit" name="Add Student"/></div>
+</form>
+
+<ul>
+  {% for comment in comments %}
+  <li>
+    <p>{{ comment.name }}: {{ comment.key.id() }}
+    <p>{{ comment.message }}
+    <p>Date Created: {{ comment.created_date }}
+  {% endfor %}
+</ul>

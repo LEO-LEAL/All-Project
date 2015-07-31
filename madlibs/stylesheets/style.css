@@ -1,0 +1,16 @@
+body{
+  text-align: center;
+}
+
+ul{
+  list-style-position: inside;
+}
+
+h1{
+  font-size:40px;
+  font-family: fantasy;
+}
+
+span{
+  color: blue;
+}

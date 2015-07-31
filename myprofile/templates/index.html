@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html> 
+<head> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="resources/myprofile.css">
+  <script src ="resources/my_profile.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <title> Leo Leal </title> 
+</head> 
+<body background= "resources/how-are-blue-nose-pitbull-puppies-created.jpg">
+<img src="resources/unnamed.png" id = 'bulls'>
+ <center>
+  <h1>The Bio of Leo Guillermo Leal</h1> 
+
+<figure>
+ <img src="{{ gif_url }}" width=600px id = "pits">
+ <a href="http://www.dogster.com/"><figcaption><em>I LOVE DOGS!!!!</em></figcaption></a>
+</figure>
+
+  <h2 id = "hello">Hello everbody I hope you enjoy</h2>
+
+  <p id="p2">My name is Leo Leal, and I'm from Granada Hills, California. But I lived most of my life in Sylmar, California and for those who think that's not much of a difference in location, trust me it is. I'm going to be attending the University of California, Irvine and studying to major in Computer Science and Engineering through their CSE program
+     this fall. I used to play football until last year and recently took on a love for theater and acting, I love performing improv, and I also started drawing recently. I also love listening to music and watching anime. However, the one thing I loved most growing up was math and science, and until last year I thought I was going to major only in one or the other.
+     But after discovering computer science through a presentation, given to the Calculus AB class I was in last year, I instantly fell in love with the concepts and possibilities brought into the light through computer science. Now after taking a computer science class offered by GHCHS, my school, I feel that I would love to strengthen my understanding
+     of everything revolving around computer Science. I hope to use the skills I learn from CSSI and College to either, help create amazing Video games with graphics as amazing as Gears of War and Batman: the Arkham Series, my two favorite games, or work as a digital forensics expert and help with solving issues of the digital variety. </p> 
+
+
+<form id = "enter_comment" action="/addcomment" method="POST">
+  <h5>Add a Comment</h5>
+  ----------------------------
+  <div>Message: <textarea rows="4" cols="50" name="message"/></textarea></div>
+  <div><input type="submit" name="Add Comment"/></div>
+</form>
+
+<ul>
+  {% for comment in comments %}
+  <li>
+    <p>{{ comment.user }}: {{ comment.key.id() }}
+    <p>{{ comment.message }}
+    <p>Date Created: {{ comment.created_date }}
+  {% endfor %}
+</ul>
+
+  <p id = "links">
+    My other social accounts:
+      <a href="https://plus.google.com/u/0/107554940370084931059/posts">Gmail</a>,
+      <a href="https://www.facebook.com/leo.leal.77">Facebook</a>
+  </p>
+</center>
+</body> 
+<html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+</head>
+<boby>
+  <h1>Your Story</h1>
+
+  <p>Dear <span>{{noun1}}</span>,</p>
+
+  <p>Today was weird, I heard the <span>{{pluralnoun1}}</span> again. They weren't as <span>{{adj1}}</span> as yesterday,
+  they told me to <span>{{verb1}}</span> intead of <span>{{verb2}}</span>. They <span>{{verb3}}</span> when I was alone and <span>{{verb4}}</span>
+  when I was with <span>{{pluralnoun2}}</span>. I feel like they are going to be <span>{{adj2}}</span> tomorrow, but what
+  do I know. I can <span>{{verb5}}</span> the <span>{{pluralnoun1}}</span> all I want, but it wont matter. I can't <span>{{verb6}}</span>
+  my <span>{{pluralnoun1}}</span>, they know how to <span>{{verb7}}</span>...</p>
+
+  <p>Sincerly,</p>
+  <p><span>{{noun2}}</span></p>
+
+  <ul>
+    {% for name in team_members %}
+    <li>{{ name }}, {{team_members[name]['college']}} </li>
+    {%endfor%}
+  </ul>
+
+  <img src = 'http://orig01.deviantart.net/32ce/f/2013/167/9/9/galaxy_mustache_by_lolithalolita-d699cou.gif'>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<ul>
+  {% for student in students %}
+  <li>
+    <a href="/student/view?student_id={{ student.key.id() }}">Name: {{ student.name }}</a></li>
+  {% endfor %}
+</ul>
